@@ -20,7 +20,7 @@ try:
 
     file = browser.find_element(By.CSS_SELECTOR, '#file')
     current_dir = os.path.abspath(os.path.dirname('lesson8_step8.py'))
-    file_path = os.path.join(current_dir, 'test.txt')  # добавляем к этому пути имя файла
+    file_path = os.path.join(current_dir, '../test.txt')  # добавляем к этому пути имя файла
     file.send_keys(file_path)
 
     button = browser.find_element(By.CSS_SELECTOR, '.btn.btn-primary')
