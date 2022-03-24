@@ -1,3 +1,7 @@
+class BasePageLocators():
+    LOGIN_LINK = "#login_link"
+
+
 class MainPageLocators():
     LOGIN_LINK = "#login_link"
 
