@@ -6,6 +6,7 @@ from pages.locators import BasePageLocators
 import math
 
 LOGIN_LINK = BasePageLocators.LOGIN_LINK
+BASKET = BasePageLocators.BASKET
 
 
 class BasePage:
@@ -24,6 +25,10 @@ class BasePage:
 
     def should_be_login_link(self):
         return self.is_element_present(By.CSS_SELECTOR, LOGIN_LINK), "Login link is not presented"
+
+    def go_to_basket(self):
+        basket = self.browser.find_element(By.CSS_SELECTOR, BASKET)
+        basket.click()
 
     def is_element_present(self, how, what):
         try:

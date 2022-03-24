@@ -1,6 +1,9 @@
 class BasePageLocators():
     LOGIN_LINK = "#login_link"
+    BASKET = 'span a.btn.btn-default'
 
+class BasketPageLocators():
+    BASKET_IS_EMPTY_MESSAGE = '#content_inner'
 
 class MainPageLocators():
     LOGIN_LINK = "#login_link"
