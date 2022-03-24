@@ -12,3 +12,4 @@ class MainPage(BasePage):
 
     def should_be_login_link(self):
         return self.is_element_present(By.CSS_SELECTOR, LOGIN_LINK), "Login link is not presented"
+
