@@ -1,5 +1,4 @@
 from pages.main_page import MainPage
-from selenium import webdriver
 
 
 def test_guest_can_login(browser):
