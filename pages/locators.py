@@ -1,6 +1,7 @@
 class BasePageLocators():
     LOGIN_LINK = "#login_link"
     BASKET = 'span a.btn.btn-default'
+    USER_ICON = ".icon-user"
 
 class BasketPageLocators():
     BASKET_IS_EMPTY_MESSAGE = '#content_inner'
@@ -12,7 +13,10 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = '#login_form'
     REGISTER_FORM = '#register_form'
-
+    EMAIL = '#id_registration-email'
+    PASSWORD_REG1 = '#id_registration-password1'
+    PASSWORD_REG2 = '#id_registration-password2'
+    REG_SUBMIT = "[name='registration_submit']"
 
 class ProductPageLocators():
     PRODUCT_TITLE = '.product_main h1'
